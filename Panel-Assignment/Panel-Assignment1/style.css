@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    /* position: relative; */
+    width: 90vw;
+
+}
+
+.panel{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    position: relative;
+    margin: 10px;
+    flex: 0.5;
+    transition: all 700ms ease-in;
+    cursor: pointer;
+
+}
+#panel-1{
+    background-image: url(https://rukminim1.flixcart.com/image/416/416/poster/m/q/h/sunrise-wallpaper-rwpstr2025-medium-original-imaehmk4nwgthrha.jpeg?q=70);
+
+}
+#panel-2{
+    background-image: url(https://wallpaperbat.com/img/475190-green-sunrise-wallpaper-download-nature-photography-hd-nature-wallpaper-nature-image.jpg);
+
+}
+/* #panel-2{
+    background-image: url(https://plus.google.com/110789151528634358437/posts/ivw7XkqhrR6);
+} */
+#panel-3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8tXnUgCdx95iOzeolzZVNYetCM7L1YVPNEQ&usqp=CAU);
+
+}
+
+#panel-4{
+    background-image: url(https://www.maketecheasier.com/assets/uploads/2020/06/Featured-Image-Live-Weather-Wallpapers-Android.jpg);
+
+}
+
+#panel-5{
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/Weather-Background.jpg);
+}
+
+.panel h3{
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+}
+.panel.active{
+    flex :5;
+}
+.panel.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+@media(max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+    #panel-4, #panel-5{
+        display: none;
+    }
+}
