@@ -1,0 +1,102 @@
+body{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+}
+.outer-container{
+    background-color: aquamarine;
+}
+.top-cloud{
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 700px;
+    padding-top: 20px;
+}
+
+h2{
+    color: deepskyblue;
+}
+.bottom-cloud{
+    position: relative;
+    float: right;
+    padding-top: 20px;
+    padding-right: 900px;
+    }
+    .mountain{
+        position:relative;
+        padding-left: 100px;
+        margin: 10px;
+        padding-top: 0;
+    }
+.name {
+    font-family: 'Sacramento', cursive;
+    color: deepskyblue;   
+    font-weight: bold;
+    font-size: 40px;
+}
+.pro{
+    font-family: 'Montserrat', sans-serif;
+    color: deepskyblue;  
+    font-weight: bold;
+    font-size: 40px;
+}
+.pro span{
+    text-decoration:underline ;
+}
+.profile{
+    
+    width: 300px; 
+    padding: 100px;
+    border-radius: 500px;
+}
+.info{
+    text-align: center;  
+}
+hr{
+    border: dotted deepskyblue 5px;
+    border-bottom: none;
+    width: 4%;
+    margin:100px auto;
+}
+.skill{
+    padding-bottom: none;
+}
+.skill-row{
+    width: 80%;
+    margin: 50px auto 50px auto;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.netflix{
+    width: 20%;
+    float: right;
+    margin-left: 30px;
+}
+.btn{
+    background-color: deepskyblue;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: none;
+    border:none;
+}
+.btn:hover{
+    cursor: pointer;
+    
+}
+.bottom-container{
+    background-color: deepskyblue;
+    padding: 50px 0px 20px 0px;
+    margin-top: 50px;
+}
+a{
+    color: #11999e;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+.bottom-container a:hover{
+    color: white;
+}
