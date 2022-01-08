@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function decimalToBinary(num){
+            let binaryArr=[]
+
+            while(num > 0){
+                let rem = num % 2;
+                binaryArr.unshift(rem);
+                num = Math.floor(num / 2);
+            }
+            return binaryArr;
+        }
+
+        function binaryToDecimal(binartString){
+            sum = 0;
+            let multiplier = 1;
+
+            for(let i = binartString.length -1; i >=0; i--){
+                sum = sum + parseInt(binartString[i])*multiplier;
+                multiplier = multiplier *2;
+            }
+            return sum;
+    
+        }
+        console.log(decimalToBinary(19).join(''))
+        console.log(decimalToBinary(18).join(''))
+        console.log(binaryToDecimal(decimalToBinary(80).join('')))
+
+        console.log(binaryToDecimal("1010"))
+    </script>
+
+    
+</body>
+</html>
