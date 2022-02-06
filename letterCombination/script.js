@@ -32,4 +32,4 @@ function letterCombination(A){
     return ans
 }
 
-console.log(letterCombination("23"))
+console.log(letterCombination("44"))
