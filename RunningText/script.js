@@ -27,3 +27,4 @@ function writeText(){
 }
 
 speedEl.addEventListener("input", (e) => {time = NUM/ e.target.value})
+
