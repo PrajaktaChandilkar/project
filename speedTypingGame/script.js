@@ -34,12 +34,12 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 //generate random quote
-function getRandomQuote(){
+async function getRandomQuote(){
     const apiUrl = 'https://api.quotable.io/random'
-    return fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => data.content)
-    // console.log(response)
+    const response = await fetch(apiUrl)
+    const data = await response.json()
+    return data.content
+
 }
 
 //create span for each character
