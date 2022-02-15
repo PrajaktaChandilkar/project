@@ -35,7 +35,7 @@ quoteInputElement.addEventListener('input', () => {
 
 //generate random quote
 function getRandomQuote(){
-    const apiUrl = 'http://api.quotable.io/random'
+    const apiUrl = 'https://api.quotable.io/random'
     return fetch(apiUrl)
     .then(response => response.json())
     .then(data => data.content)
