@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+body{
+    background-color: rgb(191, 230, 241);
+}
+
+.whiteBox{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: white;
+}
+.imgBox{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+    background-image: url('Prajakta.jpg');
+    /* cursor: po; */
+    cursor:  grab;
+}
+
+.hold{
+    border: 2px solid red;
+}
+.hide{
+    display: none;
+}
+.dash{
+    background-color: rgb(255, 127, 202);
+    border: dashed;
+}
