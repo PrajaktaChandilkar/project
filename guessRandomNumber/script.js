@@ -20,7 +20,7 @@ console.log(randomNumber)
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   const guess = parseInt(userInput.value);
-  console.log(guess);
+//   console.log(guess);
 
   validation(guess);
 });
@@ -66,15 +66,7 @@ function displayMsg(message){
     lowOrHi.innerHTML = `<h1>${message}</h1>`
 }
 
-// const pE1 = document.createElement('p')
-// function endGame(){
-//     userInput.value = ''
-//     pE1.classList.add("button")
-//     pE1.style.cursor = "pointer"
-//     pE1.innerHTML = `<h1 onclick = "newGame()"> Start New Game </h1>`
-
-//     startOver.appendChild(pE1)
-// }
+//appende button for new game option
 const pEl = document.createElement("p");
 function endGame() {
   userInput.value = "";
