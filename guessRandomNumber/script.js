@@ -15,27 +15,27 @@ let guessCount = 0;
 let maxCount = 10;
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
-console.log(randomNumber)
+console.log(randomNumber);
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   const guess = parseInt(userInput.value);
-//   console.log(guess);
-
+  //   console.log(guess);
   validation(guess);
 });
 
 function validation(guess) {
   previousGuessArray.push(guess);
-
-  if (guessCount >= maxCount) {
-    //gfame over
-    displayGuesss(guess)
-    displayMsg(`Game Over number was ${randomNumber}`)
-    endGame()
+  // console.log('count', guessCount)
+  if (guessCount > maxCount - 1) {
+    //game over
+    // guessCount=0
+    displayGuesss(guess);
+    displayMsg(`Game Over!! Number was ${randomNumber}`);
+    endGame();
   } else {
     displayGuesss(guess);
-    checkGuesses(guess)
+    checkGuesses(guess);
   }
 }
 
@@ -45,28 +45,28 @@ function displayGuesss(guess) {
   userInput.value = "";
   guessCount++;
   let remainingguasses = maxCount - guessCount;
-  if(remainingguasses <= 0){
-    remainingguasses = 0
+  if (remainingguasses <= 0) {
+    remainingguasses = 0;
   }
   remaining.innerHTML = remainingguasses;
 }
 
-function checkGuesses(guess){
-    if(guess === randomNumber){
-        displayMsg('You guessed correctly')
-        endGame()
-    }else if (guess < randomNumber){
-        displayMsg('Too low! Try a higher number')
-    }else{
-        displayMsg('Too High! Try smaller Number')
-    }
+function checkGuesses(guess) {
+  if (guess === randomNumber) {
+    displayMsg("You guessed correctly");
+    endGame();
+  } else if (guess < randomNumber) {
+    displayMsg("Too low! Try a higher number");
+  } else {
+    displayMsg("Too High! Try smaller Number");
+  }
 }
 
-function displayMsg(message){
-    lowOrHi.innerHTML = `<h1>${message}</h1>`
+function displayMsg(message) {
+  lowOrHi.innerHTML = `<h1>${message}</h1>`;
 }
 
-//appende button for new game option
+//append button for new game option
 const pEl = document.createElement("p");
 function endGame() {
   userInput.value = "";
