@@ -15,12 +15,11 @@ for(let i = 0; i < numberOfBalloons; i++){
     divEl.style.color=`${getRandColor}`
     container.appendChild(divEl)
     divEl.addEventListener("mouseenter", function(){
-
         if(divEl.style.backgroundColor != "transparent"){
             popped++
         }
         console.log(popped)
-        divEl.style.backgroundColor = "transparent "
+        divEl.style.backgroundColor = "transparent"
         checkAllPopped()
     })
 
@@ -41,6 +40,8 @@ function getColor(){
         return hex.padStart(2,'0')
     }
     return "#"+color()+color()+color()
+    //with rgb
+    // return `rgb(${random(255)},${random(255)},${random(255)})`
 }
 
 function random(number){
