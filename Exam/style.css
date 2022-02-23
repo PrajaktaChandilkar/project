@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.input{
+    margin-bottom: 300px;
+    border: 1px solid black;
+    height: 30px;
+    width: 500px;
+    position: fixed;
+}
+.nextLetter{
+    /* align-items: center; */
+    margin:10px;
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nextLetter:hover{
+    font-size: 8rem;
+    text-shadow: 1px;
+}

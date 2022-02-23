@@ -22,13 +22,13 @@ range.addEventListener("change", () => {
 });
 
 function getColor(){
-    function color(){
-        let hex = random(255).toString(16)
-        return hex.padStart(2,'0')
-    }
-    return "#"+color()+color()+color()
-    //with rgb
-    // return `rgb(${random(255)},${random(255)},${random(255)})`
+    // function color(){
+    //     let hex = random(255).toString(16)
+    //     return hex.padStart(2,'0')
+    // }
+    // return "#"+color()+color()+color()
+    // //with rgb
+    return `rgb(${random(255)},${random(255)},${random(255)})`
 }
 
 function random(number){
